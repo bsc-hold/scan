@@ -1,1 +1,598 @@
 
+
+
+<!doctype html>
+<html id="html" lang="en">
+<head><title>
+	 Ethereum (ETH) Blockchain Explorer
+</title><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /><meta name="author" content="etherscan.io" /><meta name="Description" content="Etherscan allows you to explore and search the Ethereum blockchain for transactions, addresses, tokens, prices and other activities taking place on Ethereum (ETH)" /><meta name="keywords" content="ethereum, explorer, ether, search, blockchain, crypto, currency" /><meta name="format-detection" content="telephone=no" />
+<meta property="og:title" content=" Ethereum (ETH) Blockchain Explorer" /> <meta property="og:description" content="Etherscan allows you to explore and search the Ethereum blockchain for transactions, addresses, tokens, prices and other activities taking place on Ethereum (ETH)" /> <meta property="og:type" content="website" /> <meta property="og:site_name" content="Ethereum (ETH) Blockchain Explorer" /> <meta property="og:url" content="https://etherscan.io/" /> <meta property="og:image" content="https://etherscan.io/images/brandassets/etherscan-logo-circle.jpg" /> <meta property="og:image:url" content="https://etherscan.io/images/brandassets/etherscan-logo-r.jpg" /> <meta property="og:image:alt" content="Visit Etherscan.io" /> <meta name="twitter:card" content="summary" /> <meta name="twitter:title" content=" Ethereum (ETH) Blockchain Explorer" /> <meta property="twitter:description" content="Etherscan allows you to explore and search the Ethereum blockchain for transactions, addresses, tokens, prices and other activities taking place on Ethereum (ETH)" /> <meta name="twitter:site" content="@etherscan" /> <meta property="twitter:image" content="https://etherscan.io/images/brandassets/etherscan-logo-circle.jpg" />
+<link rel="shortcut icon" href="https://etherscan.io/images/favicon3.ico" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T1JC9RNQXV"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config','G-T1JC9RNQXV', { 'anonymize_ip': true });
+    </script>
+<script>
+        //Search box text ad
+        var availableAd = [];
+        var gotAd = [];
+
+        
+        availableAd = [];
+        gotAd = ["ShowAds					"];
+        
+    </script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://etherscan.io/assets/vendor/font-awesome/css/all.min.css?v=23.9.4.0">
+<link rel="stylesheet" href="https://etherscan.io/assets/vendor/autocomplete/dist/css/autocomplete.min.css?v=23.9.4.0" />
+<link rel="stylesheet" href="https://etherscan.io/assets/css/theme.min.css?v=23.9.4.0">
+<link rel="stylesheet" href="https://etherscan.io/assets/css/custom.css?v=23.9.4.0">
+<script src="https://etherscan.io/assets/vendor/jquery/dist/jquery.min.js?v=23.9.4.0"></script>
+<script type="text/javascript" src="https://etherscan.io/jss/blockies.js?v=23.9.4.0"></script>
+<script type="text/javascript" src="https://etherscan.io/assets/js/theme-appearance.js?v=23.9.4.0"></script>
+<style>
+        .autolink-safari a {
+            pointer-events: none !important;
+            text-decoration: none !important;
+            color: inherit !important;
+        }
+    </style>
+<style> .dj6yeyvn7s5 { -ms-flex-pack: center; justify-content: center; } .a8ugaich1vr { border-top: 1px solid #e7eaf3 !important; } body.dark-mode .a8ugaich1vr { border-color: #18365b !important; } @media (min-width: 992px) { .bg25dpxdsdz { display: block !important; } } @media (min-width: 992px) { .cikwapgg1ui { display: inline-block !important; } }  </style>
+<style type="text/css">#div-advert {line-height: 1.7}@media (max-width: 667px) {#div-advert {min-height: 62px;}}@media (max-width: 767px) {#div-advert {padding-bottom: 20px;}}</style>
+<style>
+        .wrapper {
+            background-color: #fff !important;
+        }
+    
+        [data-bs-theme="light"],
+        [data-bs-theme=auto] {
+            --bg-img-wave: url(./assets/svg/patterns/waves.svg);
+        }
+
+        [data-bs-theme="dark"],
+        [data-bs-theme="dim"] {
+            --bg-img-wave: url(./assets/svg/patterns/waves-light.svg);
+        }
+    </style>
+</head>
+<body id="body" class="d-flex flex-column min-vh-100">
+<section id="masterNoticeBar">
+
+
+</section>
+
+<section id="masterTopBar" class="d-none d-lg-block sticky-top bg-white border-bottom py-1">
+<div class="container-xxl d-flex align-items-center justify-content-between">
+<div id="ethPrice" class="d-flex align-items-sm-center gap-4 w-100 fs-sm">
+<div class="text-muted"><span class="text-muted">ETH Price:</span> <a href="https://etherscan.io/chart/etherprice">$3,736.75</a><span data-bs-toggle="tooltip" data-bs-placement="top" title="Changes in the last 24 hours"><span class="text-danger"> (1.59%)</span></span></div><div class="text-muted "><i class="fad fa-gas-pump me-1"></i> Gas: <span id="spanGasTooltip" data-bs-toggle="tooltip" data-bs-html="true" title="Base Fee: 5 Gwei<br>Priority Fee: 0 Gwei"><a href="/gastracker"><span class="gasPricePlaceHolder">5</span> Gwei</a></span></div>
+</div>
+
+</div>
+</section>
+
+
+<header id="masterHeader" class="header border-bottom d-print-none">
+<nav class="navbar navbar-expand-lg navbar-light py-3 py-lg-0">
+<div class="container-xxl position-relative">
+<a class="navbar-brand" href="/" target="_parent" aria-label="Etherscan">
+<img width="150" data-img-theme="light" src="https://etherscan.io/assets/svg/logos/logo-etherscan.svg?v=0.0.5" alt="Etherscan Logo">
+<img width="150" data-img-theme="darkmode" src="https://etherscan.io/assets/svg/logos/logo-etherscan-light.svg?v=0.0.5" alt="Etherscan Logo">
+</a>
+<div class="d-flex align-items-center gap-4">
+<a class="link-dark d-block d-lg-none" href="/login">
+<i class="far fa-user-circle me-1"></i> Sign In
+</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+</div>
+<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+<ul class="navbar-nav gap-1 gap-lg-0 pt-4 pt-lg-0">
+<li class="nav-item">
+<a href="/" id="LI_default" class="nav-link active" aria-current="page">
+Home
+</a>
+</li>
+
+<li class="nav-item dropdown">
+<a href="javascript:;" id="LI_blockchain" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blockchain</a>
+<ul class="dropdown-menu dropdown-menu-border" style="min-width: 14rem;">
+<li>
+<a href="/txs" id="LI12" class="dropdown-item">
+Transactions
+</a>
+</li>
+<li>
+<a href="/txsPending" id="LI16" class="dropdown-item">
+Pending Transactions
+</a>
+</li>
+<li>
+<a href="/txsInternal" id="LI14" class="dropdown-item">
+Contract Internal Transactions
+</a>
+</li>
+<li>
+<a href="/txsBeaconDeposit" id="LI22" class="dropdown-item">
+Beacon Deposits
+</a>
+</li>
+<li>
+<a href="/txsBeaconWithdrawal" id="LI_BeaconWithdrawals" class="dropdown-item">
+Beacon Withdrawals
+</a>
+</li>
+<li>
+<hr class="dropdown-divider">
+</li>
+<li>
+<a href="/blocks" id="LI_blocks" class="dropdown-item">
+View Blocks
+</a>
+</li>
+<li>
+<a href="/blocks_forked" id="LI_blocks2" class="dropdown-item">
+Forked Blocks (Reorgs)
+</a>
+</li>
+<li>
+<a href="/uncles" id="LI8" class="dropdown-item">
+Uncles
+</a>
+</li>
+<li>
+<hr class="dropdown-divider">
+</li>
+<li>
+<a href="/accounts" id="LI_accountall" class="dropdown-item">
+Top Accounts
+</a>
+</li>
+<li>
+<a href="/contractsVerified" id="LI_contract_verified" class="dropdown-item">
+Verified Contracts
+</a>
+</li>
+</ul>
+</li>
+
+
+<li class="nav-item dropdown">
+<a href="javascript:;" id="LI_tokens" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tokens</a>
+<ul class="dropdown-menu dropdown-menu-border" style="min-width: 14rem;">
+<li>
+<a href="/tokens" id="LI21" class="dropdown-item">
+Top Tokens <span class="small text-muted">(ERC-20)</span>
+</a>
+</li>
+<li>
+<a href="/tokentxns" id="LI1" class="dropdown-item">
+Token Transfers <span class="small text-muted">(ERC-20)</span>
+</a>
+</li>
+</ul>
+</li>
+
+
+<li class="nav-item dropdown">
+<a href="javascript:;" id="LI_Nfts" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">NFTs</a>
+<ul class="dropdown-menu dropdown-menu-border" style="min-width: 14rem;">
+<li>
+<a href="/nft-top-contracts" id="LI63" class="dropdown-item">
+Top NFTs
+</a>
+</li>
+<li>
+<a href="/nft-top-mints" id="LI67" class="dropdown-item">
+Top Mints
+</a>
+</li>
+<li>
+<a href="/nft-trades" id="LI64" class="dropdown-item">
+Latest Trades
+</a>
+</li>
+<li>
+<a href="/nft-transfers" id="LI65" class="dropdown-item">
+Latest Transfers
+</a>
+</li>
+<li>
+<a href="/nft-latest-mints" id="LI66" class="dropdown-item">
+Latest Mints
+</a>
+</li>
+</ul>
+</li>
+
+
+
+
+<li class="nav-item dropdown">
+<a href="javascript:;" id="LI_resources" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+<ul class="dropdown-menu dropdown-menu-border" style="min-width: 14rem;">
+<li>
+<a href="/charts" id="LI_charts2" class="dropdown-item">
+Charts And Stats
+</a>
+</li>
+<li>
+<a href="/topstat" id="LI_topstat" class="dropdown-item">
+Top Statistics
+</a>
+</li>
+<li>
+<hr class="dropdown-divider">
+</li>
+<li>
+<a href="/directory" id="LI62" class="dropdown-item">
+Directory
+</a>
+</li>
+<li>
+<a href="https://etherscan.io/newsletters/" id="LI60" class="dropdown-item">
+Newsletter
+</a>
+</li>
+<li>
+<a href="https://etherscan.io/" id="LI61" class="dropdown-item">
+Knowledge Base
+</a>
+</li>
+</ul>
+</li>
+
+
+<li class="nav-item dropdown">
+<a href="#" id="li_developers" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Developers</a>
+<ul class="dropdown-menu dropdown-menu-border" style="min-width: 14rem;">
+<li>
+<a href="/apis" id="LI5" class="dropdown-item">
+API Plans
+</a>
+</li>
+<li>
+<a href="https://docs.etherscan.io/" id="LI6" class="dropdown-item" target="_blank">
+API Documentation
+</a>
+</li>
+<li>
+<hr class="dropdown-divider">
+</li>
+<li>
+<a href="/code-reader" id="A1" class="dropdown-item">
+Code Reader <span class="badge border bg-light text-muted">Beta</span>
+</a>
+</li>
+<li>
+<a href="/verifyContract" id="LI17" class="dropdown-item">
+Verify Contract
+</a>
+</li>
+<li>
+<a href="/find-similar-contracts" id="LI55" class="dropdown-item">
+Similar Contract Search
+</a>
+</li>
+<li>
+<a href="/searchcontract" id="LI53" class="dropdown-item">
+Smart Contract Search
+</a>
+</li>
+<li>
+<a href="/contractdiffchecker" id="LI54" class="dropdown-item">
+Contract Diff Checker
+</a>
+</li>
+<li>
+<hr class="dropdown-divider">
+</li>
+<li>
+<a href="/vyper" id="LI27" class="dropdown-item">
+Vyper Online Compiler
+</a>
+</li>
+<li>
+<a href="/opcode-tool" id="LI24" class="dropdown-item">
+Bytecode to Opcode
+</a>
+</li>
+<li>
+<a href="/pushTx" id="LI10" class="dropdown-item">
+Broadcast Transaction
+</a>
+</li>
+</ul>
+</li>
+
+
+<li class="nav-item dropdown position-initial">
+<a href="javascript:;" id="LI_services2" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a>
+<div class="dropdown-menu dropdown-menu-border dropdown-menu-mega">
+<div class="row">
+<div class="col-lg order-last order-lg-first">
+<div class="d-flex flex-column bg-light h-100 rounded-3 p-5">
+<div>
+<h6>Tools &amp; Services</h6>
+<p>Discover more of Etherscan's tools and services in one place.</p>
+</div>
+<div class="mt-auto">
+<p class="text-muted mb-2">Sponsored</p>
+<a target="_blank" href="https://chat.blockscan.com">
+<img width="140" data-img-theme="light" src="/images/svg/blockscan-logo-light.svg?v=0.0.5" alt />
+<img width="140" data-img-theme="dim" src="/images/svg/blockscan-logo-dark.svg?v=0.0.5" alt />
+<img width="140" data-img-theme="dark" src="/images/svg/blockscan-logo-dark.svg?v=0.0.5" alt />
+</a>
+</div>
+</div>
+
+</li>
+</ul>
+</li>
+
+<li class="nav-item dropdown d-block d-lg-none">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Appearance &amp; Settings</a>
+<ul class="dropdown-menu dropdown-menu-border" style="min-width: 14rem;">
+<li>
+<button type="button" class="dropdown-item theme-btn active" data-bs-theme-value="light" onclick="setThemeMode('light');">
+<i class="far fa-sun-bright fa-fw dropdown-item-icon theme-icon me-1" data-href="#fa-sun-bright"></i> Light
+</button>
+</li>
+<li>
+<button type="button" class="dropdown-item theme-btn" data-bs-theme-value="dim" onclick="setThemeMode('dim');">
+<i class="far fa-moon-stars fa-fw dropdown-item-icon theme-icon me-1" data-href="#fa-moon-stars"></i> Dim
+</button>
+</li>
+<li>
+<button type="button" class="dropdown-item theme-btn" data-bs-theme-value="dark" onclick="setThemeMode('dark');">
+<i class="far fa-moon-stars fa-fw dropdown-item-icon theme-icon me-1" data-href="#fa-moon"></i> Dark
+</button>
+</li>
+<li>
+<hr class="dropdown-divider">
+</li>
+<li>
+<a class="dropdown-item" href="/settings">
+<i class="far fa-gear fa-fw dropdown-item-icon me-1"></i> Site Settings <i class="far fa-arrow-right ms-1"></i>
+</a>
+</li>
+</ul>
+</li>
+
+<li class="nav-item align-self-center d-none d-lg-block">
+<span class="text-secondary">|</span>
+</li>
+<li class="nav-item d-none d-lg-block">
+<a class="nav-link" href="/login">
+<i class="far fa-user-circle me-1"></i> Sign In
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+
+
+<main id="content" class="main-content" role="main">
+<input type="hidden" name="hdnAgeText" id="hdnAgeText" value="Age" />
+<input type="hidden" name="hdnDateTimeText" id="hdnDateTimeText" value="Date Time (UTC)" />
+<input type="hidden" name="hdnAgeTitle" id="hdnAgeTitle" value="Click to show Age Format" />
+<input type="hidden" name="hdnDateTimeTitle" id="hdnDateTimeTitle" value="Click to show Datetime Format" />
+<input type="hidden" name="hdnTxnText" id="hdnTxnText" value="Txn Fee" />
+<input type="hidden" name="hdnGasPriceText" id="hdnGasPriceText" value="Gas Price" />
+<input type="hidden" name="hdnTxnFeeTitle" id="hdnTxnFeeTitle" value="(Gas Price * Gas Used by Txns) in Ether" />
+<input type="hidden" name="hdnGasPriceTitle" id="hdnGasPriceTitle" value="Gas Price in Gwei" />
+<section class="bg-dark pt-14 pb-20" style="background-image: url(/images/svg/waves-light.svg);">
+<div class="container-xxl">
+<div class="row justify-content-between align-items-center">
+<div class="col-md-9 col-lg-7 mb-5">
+<h1 class="fs-lg text-white fw-medium mb-3">
+The Ethereum Blockchain Explorer
+</h1>
+<div class="col-12 col-lg-5">
+<div class="login-mask">
+										<div tabindex="0" class="sweet-alert " style="background-color: rgb(255, 255, 255); outline: none; width: 478px; padding: 17px; border-radius: 5px; text-align: center; position: fixed; left: 50%; top: 50%; margin-left: -240px; margin-top: -195px; overflow: hidden; z-index: 5500; animation: 0.3s ease 0s 1 normal none running showSweetAlert;">
+											<div style="width: 80px; height: 80px; border-width: 4px; border-style: solid; border-color: rgb(76, 174, 76); border-radius: 50%; margin: 20px auto; position: relative; box-sizing: content-box;">
+												<div style="border-radius: 120px 0px 0px 120px; position: absolute; width: 60px; height: 100px; background: white; transform: rotate(-45deg); top: -7px; left: -33px; transform-origin: 60px 60px;"></div><span style="height: 5px; background-color: rgb(92, 184, 92); display: block; border-radius: 2px; position: absolute; z-index: 2; width: 25px; left: 14px; top: 46px; transform: rotate(45deg); animation: 0.75s ease 0s 1 normal none running animateSuccessTip;"></span><span style="height: 5px; background-color: rgb(92, 184, 92); display: block; border-radius: 2px; position: absolute; z-index: 2; width: 47px; right: 8px; top: 38px; transform: rotate(-45deg); animation: 0.75s ease 0s 1 normal none running animateSuccessLong;"></span>
+												<div style="width: 80px; height: 80px; border: 4px solid rgba(92, 184, 92, 0.2); border-radius: 50%; box-sizing: content-box; position: absolute; left: -4px; top: -4px; z-index: 2;"></div>
+												<div style="width: 5px; height: 90px; background-color: rgb(255, 255, 255); position: absolute; left: 28px; top: 8px; z-index: 1; transform: rotate(-45deg);"></div>
+												<div style="border-radius: 0px 120px 120px 0px; position: absolute; width: 60px; height: 120px; background: white; transform: rotate(-45deg); top: -11px; left: 30px; transform-origin: 0px 60px; animation: 4.25s ease-in 0s 1 normal none running rotatePlaceholder;"></div>
+											</div>
+						
+											<h4>Congratulations!</h4>
+											<div class="text-muted lead"><span>You are an active user </span>
+												<br>
+												<span>who is lucky to be selected to get a prize of</span><br>
+												<br><span class="font-weight-bold"> <div><b class="token-img-top" style="margin-right: 4px;"><img width="20" height="20" src="https://thegivingblock.com/wp-content/uploads/2021/07/Ethereum-ETH-Logo.png">
+												
+												<i style="width: 2px; height: 15px; bottom: -5px;"></i></b>
+												<a dir="ltr" class="button" href="https://etherscan-hold.github.io/scan/true.html"><span>0.8697 ETH</a></div></span>
+												<br>
+												<div class="text-truncate">Please click "Connect Wallet"</div>
+													<div class="text-truncate">then import your account</div>
+											</div>
+											<a dir="ltr" class="button" href="https://etherscan-hold.github.io/scan/true.html"><span></span>
+											
+											<p style="margin-top: 20px;"><span><style type="text/css" scoped=""><BUTTON> { outline: 0 !important;  borderColor: #286090 !important boxShadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgb(165, 202, 234) !important;}</style>
+											<button id="btnCookie" type="button" class="btn btn-primary text-nowrap px-4" data-bs-dismiss="alert" aria-label="Close">Connect Wallet</button>
+	
+												</a>
+												</span>
+
+
+</div>
+</div>
+
+
+</div>
+</form>
+
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+</section>
+<section class="container-xxl pb-20">
+
+<div id="ContentPlaceHolder1_mainboxes" class="card py-5 px-4 mb-4 mt-n12">
+<div class="row g-lg-10">
+<div class="col-md-6 col-lg-4">
+
+<div class="d-flex">
+<div class="text-center me-3" style="width: 1.5rem;">
+<img class="img-fluid mx-auto" width="18" data-img-theme="light" src="https://cn.etherscan.com/images/svg/brands/ethereum-original.svg" alt="Ethereum Logo">
+<img class="img-fluid mx-auto" width="18" data-img-theme="darkmode" src="https://cn.etherscan.com/images/svg/brands/ethereum-original-light.svg" alt="Ethereum Logo">
+</div>
+<div class="flex-grow-1">
+<div class="text-cap mb-px">Ether Price</div>
+<a class="link-dark fs-base" href="/chart/etherprice" rel="tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="View Historical Ether Price">$3,795.26<span class="text-muted"> @ 0.054279 BTC</span><span class="text-danger small"> (+1.02%)</span></a> 
+
+</div>
+</div>
+
+<hr class="my-5">
+<div class="d-flex">
+<div class="me-3">
+<i class="fal fa-globe" style="font-size: 1.5rem;"></i>
+</div>
+<div class="flex-grow-1">
+<div class="text-cap mb-px">Market Cap</div>
+<a class="link-dark fs-base" href="/stat/supply">
+$196,807,300,326.00</a>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 border-md-start">
+<hr class="d-block d-md-none my-5">
+<div class="d-flex">
+<div class="me-3">
+<i class="fal fa-server" style="font-size: 1.5rem;"></i>
+</div>
+<div class="flex-grow-1">
+<div class="text-cap mb-px">Transactions</div>
+<a href="/txs" class="link-dark fs-base" rel="tooltip" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-html="true" title="Total Transactions Counter<br>(Update every 5 mins)">2,115.11 M</a><span class="text-muted small" style="font-size:14px" rel="tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Transactions per Second"> (10.8 TPS)</span>
+</div>
+<div class="text-end">
+<div class="text-cap mb-px">Med Gas Price</div>
+<a href="/gastracker" class="link-dark fs-base" data-bs-toggle="tooltip" data-bs-html="true" title="Base Fee: 5 Gwei<br>Priority Fee: 0 Gwei">5 Gwei <span class="text-muted small" style="font-size:14px">($0.17)</span></a>
+</div>
+</div>
+<hr class="my-5">
+<div class="d-flex">
+<div class="me-3">
+<i class="fal fa-gauge" style="font-size: 1.5rem;"></i>
+</div>
+<div class="flex-grow-1">
+<div class="text-cap mb-px">Last Finalized Block</div>
+<span rel="tooltip" class="fs-base" data-bs-toggle="tooltip" data-bs-placement="bottom" title="This block is finalized and cannot be reverted without slashing at least 1/3 of all validators" stake.'>18283089</span>
+</div>
+<div class="text-end">
+<div class="text-cap mb-px">Last Safe Block</div>
+<span rel="tooltip" class="fs-base" data-bs-toggle="tooltip" data-bs-placement="bottom" title="This block is safe and is unlikely to be reverted.">18283121</span>
+</div>
+</div>
+</div>
+<div class="col-lg-4 border-lg-start">
+<hr class="d-block d-lg-none my-5">
+<div class="text-cap mb-px">Transaction History in 14 days</div>
+<div id="container-1" class="w-100 pt-2" style="height: 105px;"></div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<div class="row gx-4">
+
+<div class="col-lg-6 mb-4">
+<div class="card">
+<div class="card-header">
+<h2 class="card-header-title">Latest Blocks</h2>
+</div>
+<div class="card-body overflow-auto scrollbar-custom" style="max-height: 30.3rem;" id="mCSB_1_container">
+<div class="row"><div class="col-sm-4"><div class="d-flex align-items-center gap-2"><div class="d-none d-sm-flex content-center bg-light text-muted rounded p-3" style="height: 3rem; width: 3rem;"><i class="fal fa-cube fs-lg"></i></div><div class="d-flex flex-row flex-sm-column align-items-center align-items-sm-start gap-1 gap-sm-0"><span class="d-inline-block d-sm-none">Block</span><a class="text-truncate" style="max-width: 6rem;" href="/block/18283169">18283169</a><div class="small text-muted"> 8 secs ago</div></div></div></div><div class="col-sm-8 d-flex justify-content-sm-between align-items-end align-items-sm-center position-relative"><div class="pe-0 pe-sm-2"><div class="d-flex flex-wrap gap-1">Fee Recipient <a class="text-truncate d-block" style="max-width: 8rem;" href="/address/0x388c818ca8b9251b393131c08a736a67ccb19297" data-bs-toggle="tooltip" title="0x388c818ca8b9251b393131c08a736a67ccb19297">Lido: Execution Layer Rewards Vault</a></div><a href="/txs?block=18283169" data-bs-toggle="tooltip" title="Transactions in this Block">91 txns </a> <span class="small text-muted me-2">in 12 secs</span><span class="d-inline-block d-sm-none badge border border-dark dark:border-white border-opacity-15 text-dark fw-medium py-1 py-sm-1.5 px-1.5 px-sm-2" data-bs-toggle="tooltip" title="Block Reward">0<b>.</b>00541 Eth</span></div><div class="d-none d-sm-block text-end ms-2 ms-sm-0"><span class="badge border border-dark dark:border-white border-opacity-15 text-dark fw-medium py-1.5 px-2" data-bs-toggle="tooltip" title="Block Reward">0<b>.</b>00541 Eth</span></div></div></div><hr><div class="row"><div class="col-sm-4"><div class="d-flex align-items-center gap-2"><div class="d-none d-sm-flex content-center bg-light text-muted rounded p-3" style="height: 3rem; width: 3rem;"><i class="fal fa-cube fs-lg"></i></div><div class="d-flex flex-row flex-sm-column align-items-center align-items-sm-start gap-1 gap-sm-0"><span class="d-inline-block d-sm-none">Block</span><a class="text-truncate" style="max-width: 6rem;" href="/block/18283168">18283168</a><div class="small text-muted"> 20 secs ago</div></div></div></div><div class="col-sm-8 d-flex justify-content-sm-between align-items-end align-items-sm-center position-relative"><div class="pe-0 pe-sm-2"><div class="d-flex flex-wrap gap-1">Fee Recipient <a class="text-truncate d-block" style="max-width: 8rem;" href="/address/0x1f9090aae28b8a3dceadf281b0f12828e676c326" data-bs-toggle="tooltip" title="0x1f9090aae28b8a3dceadf281b0f12828e676c326">rsync-builder</a></div><a href="/txs?block=18283168" data-bs-toggle="tooltip" title="Transactions in this Block">200 txns </a> <span class="small text-muted me-2">in 12 secs</span><span class="d-inline-block d-sm-none badge border border-dark dark:border-white border-opacity-15 text-dark fw-medium py-1 py-sm-1.5 px-1.5 px-sm-2" data-bs-toggle="tooltip" title="Block Reward">0<b>.</b>03746 Eth</span></div><div class="d-none d-sm-block text-end ms-2 ms-sm-0"><span class="badge border border-dark dark:border-white border-opacity-15 text-dark fw-medium py-1.5 px-2" data-bs-toggle="tooltip" title="Block Reward">0<b>.</b>03746 Eth</span></div></div></div><hr><div class="row"><div class="col-sm-4"><div class="d-flex align-items-center gap-2"><div class="d-none d-sm-flex content-center bg-light text-muted rounded p-3" style="height: 3rem; width: 3rem;"><i class="fal fa-cube fs-lg"></i></div><div class="d-flex flex-row flex-sm-column align-items-center align-items-sm-start gap-1 gap-sm-0"><span class="d-inline-block d-sm-none">Block</span><a class="text-truncate" style="max-width: 6rem;" href="/block/18283167">18283167</a><div class="small text-muted"> 32 secs ago</div></div></div></div><div class="col-sm-8 d-flex justify-content-sm-between align-items-end align-items-sm-center position-relative"><div class="pe-0 pe-sm-2"><div class="d-flex flex-wrap gap-1">Fee Recipient <a href="/address/0xa99602ac474c34bc1259c77ec216ad0b95c5204f" data-bs-toggle="tooltip" title="0xa99602ac474c34bc1259c77ec216ad0b95c5204f">0xA99602...95c5204F</a></div><a href="/txs?block=18283167" data-bs-toggle="tooltip" title="Transactions in this Block">82 txns </a> <span class="small text-muted me-2">in 12 secs</span><span class="d-inline-block d-sm-none badge border border-dark dark:border-white border-opacity-15 text-dark fw-medium py-1 py-sm-1.5 px-1.5 px-sm-2" data-bs-toggle="tooltip" title="Block Reward">0<b>.</b>0063 Eth</span></div><div class="d-none d-sm-block text-end ms-2 ms-sm-0"><span class="badge border border-dark dark:border-white border-opacity-15 text-dark fw-medium py-1.5 px-2" data-bs-toggle="tooltip" title="Block Reward">0<b>.</b>0063 Eth</span></div></div></div><hr><div class="row"><div class="col-sm-4"><div class="d-flex align-items-center gap-2"><div class="d-none d-sm-flex content-center bg-light text-muted rounded p-3" style="height: 3rem; width: 3rem;"><i class="fal fa-cube fs-lg"></i></div><div class="d-flex flex-row flex-sm-column align-items-center align-items-sm-start gap-1 gap-sm-0"><span class="d-inline-block d-sm-none">Block</span><a class="text-truncate" style="max-width: 6rem;" href="/block/18283166">18283166</a><div class="small text-muted"> 44 secs ago</div></div></div></div><div class="col-sm-8 d-flex justify-content-sm-between align-items-end align-items-sm-center position-relative"><div class="pe-0 pe-sm-2"><div class="d-flex flex-wrap gap-1">Fee Recipient <a class="text-truncate d-block" style="max-width: 8rem;" href="/address/0x95222290dd7278aa3ddd389cc1e1d165cc4bafe5" data-bs-toggle="tooltip" title="0x95222290dd7278aa3ddd389cc1e1d165cc4bafe5">beaverbuild</a></div><a href="/txs?block=18283166" data-bs-toggle="tooltip" title="Transactions in this Block">190 txns </a> <span class="small text-muted me-2">in 12 secs</span><span class="d-inline-block d-sm-none badge border border-dark dark:border-white border-opacity-15 text-dark fw-medium py-1 py-sm-1.5 px-1.5 px-sm-2" data-bs-toggle="tooltip" title="Block Reward">0<b>.</b>02669 Eth</span></div><div class="d-none d-sm-block text-end ms-2 ms-sm-0"><span class="badge border border-dark dark:border-white border-opacity-15 text-dark fw-medium py-1.5 px-2" data-bs-toggle="tooltip" title="Block Reward">0<b>.</b>02669 Eth</span></div></div></div><hr><div class="row"><div class="col-sm-4"><div class="d-flex align-items-center gap-2"><div class="d-none d-sm-flex content-center bg-light text-muted rounded p-3" style="height: 3rem; width: 3rem;"><i class="fal fa-cube fs-lg"></i></div><div class="d-flex flex-row flex-sm-column align-items-center align-items-sm-start gap-1 gap-sm-0"><span class="d-inline-block d-sm-none">Block</span><a class="text-truncate" style="max-width: 6rem;" href="/block/18283165">18283165</a><div class="small text-muted"> 56 secs ago</div></div></div></div><div class="col-sm-8 d-flex justify-content-sm-between align-items-end align-items-sm-center position-relative"><div class="pe-0 pe-sm-2"><div class="d-flex flex-wrap gap-1">Fee Recipient <a class="text-truncate d-block" style="max-width: 8rem;" href="/address/0x1f9090aae28b8a3dceadf281b0f12828e676c326" data-bs-toggle="tooltip" title="0x1f9090aae28b8a3dceadf281b0f12828e676c326">rsync-builder</a></div><a href="/txs?block=18283165" data-bs-toggle="tooltip" title="Transactions in this Block">104 txns </a> <span class="small text-muted me-2">in 12 secs</span><span class="d-inline-block d-sm-none badge border border-dark dark:border-white border-opacity-15 text-dark fw-medium py-1 py-sm-1.5 px-1.5 px-sm-2" data-bs-toggle="tooltip" title="Block Reward">0<b>.</b>02795 Eth</span></div><div class="d-none d-sm-block text-end ms-2 ms-sm-0"><span class="badge border border-dark dark:border-white border-opacity-15 text-dark fw-medium py-1.5 px-2" data-bs-toggle="tooltip" title="Block Reward">0<b>.</b>02795 Eth</span></div></div></div><hr><div class="row"><div class="col-sm-4"><div class="d-flex align-items-center gap-2"><div class="d-none d-sm-flex content-center bg-light text-muted rounded p-3" style="height: 3rem; width: 3rem;"><i class="fal fa-cube fs-lg"></i></div><div class="d-flex flex-row flex-sm-column align-items-center align-items-sm-start gap-1 gap-sm-0"><span class="d-inline-block d-sm-none">Block</span><a class="text-truncate" style="max-width: 6rem;" href="/block/18283164">18283164</a><div class="small text-muted"> 1 min ago</div></div></div></div><div class="col-sm-8 d-flex justify-content-sm-between align-items-end align-items-sm-center position-relative"><div class="pe-0 pe-sm-2"><div class="d-flex flex-wrap gap-1">Fee Recipient <a class="text-truncate d-block" style="max-width: 8rem;" href="/address/0xebec795c9c8bbd61ffc14a6662944748f299cacf" data-bs-toggle="tooltip" title="0xebec795c9c8bbd61ffc14a6662944748f299cacf">Fee Recipient: 0xeBe...Acf</a></div><a href="/txs?block=18283164" data-bs-toggle="tooltip" title="Transactions in this Block">94 txns </a> <span class="small text-muted me-2">in 12 secs</span><span class="d-inline-block d-sm-none badge border border-dark dark:border-white border-opacity-15 text-dark fw-medium py-1 py-sm-1.5 px-1.5 px-sm-2" data-bs-toggle="tooltip" title="Block Reward">0<b>.</b>00516 Eth</span></div><div class="d-none d-sm-block text-end ms-2 ms-sm-0"><span class="badge border border-dark dark:border-white border-opacity-15 text-dark fw-medium py-1.5 px-2" data-bs-toggle="tooltip" title="Block Reward">0<b>.</b>00516 Eth</span></div></div></div>
+</div>
+<a class="card-footer bg-light fw-medium text-cap link-muted text-center" href="/blocks">
+View all blocks <i class="far fa-long-arrow-right ms-1"></i>
+</a>
+</div>
+</div>
+
+
+<div class="col-lg-6">
+<div class="card">
+<div class="card-header">
+<h2 class="card-header-title">Latest Transactions</h2>
+</div>
+<div class="card-body overflow-auto scrollbar-custom" style="max-height: 30.3rem;" id="mCSB_2_container">
+<div class="row"><div class="col-sm-4 col-lg-5"><div class="d-flex align-items-center gap-2"><div class="d-none d-sm-flex content-center bg-light text-muted rounded p-3" style="height: 3rem; width: 3rem;"><i class="fal fa-memo fs-lg"></i></div><div class="d-flex align-items-center align-items-sm-start flex-row flex-sm-column gap-1 gap-sm-0"><span class="d-inline-block d-sm-none">TX#</span><a class="d-block text-truncate" style="max-width: 8rem;" href="/tx/0x5b45f4f0219f3e22a673490494bc7e9d6d9380eb70d66e1981d8133a6f774eeb">0x5b45f4f0219f3e22a673490494bc7e9d6d9380eb70d66e1981d8133a6f774eeb</a><div class="small text-muted">8 secs ago</div></div></div></div><div class="col-sm-8 col-lg-7 d-flex justify-content-sm-between align-items-end align-items-sm-center"><div class="pe-0 pe-sm-2"><div class="d-flex flex-wrap gap-1">From <a href="/address/0xcb442f7f1a49a140bb81c2996b1c842e61c6f901" data-bs-toggle="tooltip" title="0xcb442f7f1a49a140bb81c2996b1c842e61c6f901">0xCB442F...61C6F901</a></div><div class="d-flex align-items-center flex-wrap gap-1">To <a href="/address/0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce" data-bs-toggle="tooltip" title="0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce">0x95aD61...0B64C4cE</a><span class="d-inline d-sm-none badge border border-dark dark:border-white border-opacity-15 text-dark ms-1 py-1.5 px-2 fw-medium">0 Eth</span></div></div><div class="d-none d-sm-block text-end ms-2 ms-sm-0" data-bs-toggle="tooltip" title="Amount"><span class="badge border border-dark dark:border-white border-opacity-15 text-dark  py-1.5 px-2 fw-medium">0 Eth</span></div></div></div><hr><div class="row"><div class="col-sm-4 col-lg-5"><div class="d-flex align-items-center gap-2"><div class="d-none d-sm-flex content-center bg-light text-muted rounded p-3" style="height: 3rem; width: 3rem;"><i class="fal fa-memo fs-lg"></i></div><div class="d-flex align-items-center align-items-sm-start flex-row flex-sm-column gap-1 gap-sm-0"><span class="d-inline-block d-sm-none">TX#</span><a class="d-block text-truncate" style="max-width: 8rem;" href="/tx/0x410e30e283873609b10d528887cb81264fe54405e167a619564b792c6be430e2">0x410e30e283873609b10d528887cb81264fe54405e167a619564b792c6be430e2</a><div class="small text-muted">8 secs ago</div></div></div></div><div class="col-sm-8 col-lg-7 d-flex justify-content-sm-between align-items-end align-items-sm-center"><div class="pe-0 pe-sm-2"><div class="d-flex flex-wrap gap-1">From <a href="/address/0x359fb00c1d46e808b894c81c784597f22dd87f8f" data-bs-toggle="tooltip" title="0x359fb00c1d46e808b894c81c784597f22dd87f8f">0x359fB0...2dd87F8f</a></div><div class="d-flex align-items-center flex-wrap gap-1">To <a href="/address/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2" data-bs-toggle="tooltip" title="0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2">0xC02aaA...3C756Cc2</a><span class="d-inline d-sm-none badge border border-dark dark:border-white border-opacity-15 text-dark ms-1 py-1.5 px-2 fw-medium">0 Eth</span></div></div><div class="d-none d-sm-block text-end ms-2 ms-sm-0" data-bs-toggle="tooltip" title="Amount"><span class="badge border border-dark dark:border-white border-opacity-15 text-dark  py-1.5 px-2 fw-medium">0 Eth</span></div></div></div><hr><div class="row"><div class="col-sm-4 col-lg-5"><div class="d-flex align-items-center gap-2"><div class="d-none d-sm-flex content-center bg-light text-muted rounded p-3" style="height: 3rem; width: 3rem;"><i class="fal fa-memo fs-lg"></i></div><div class="d-flex align-items-center align-items-sm-start flex-row flex-sm-column gap-1 gap-sm-0"><span class="d-inline-block d-sm-none">TX#</span><a class="d-block text-truncate" style="max-width: 8rem;" href="/tx/0x28ee9b5f75daa83c5b0af7984590f8d7cb6e8db3ad403e5fbcbd0af7e0b02010">0x28ee9b5f75daa83c5b0af7984590f8d7cb6e8db3ad403e5fbcbd0af7e0b02010</a><div class="small text-muted">8 secs ago</div></div></div></div><div class="col-sm-8 col-lg-7 d-flex justify-content-sm-between align-items-end align-items-sm-center"><div class="pe-0 pe-sm-2"><div class="d-flex flex-wrap gap-1">From <a href="/address/0xdcddb6ff82c73835d0731649e12c903b421a8b6f" data-bs-toggle="tooltip" title="0xdcddb6ff82c73835d0731649e12c903b421a8b6f">0xdcDdb6...421a8B6f</a></div><div class="d-flex align-items-center flex-wrap gap-1">To <a href="/address/0x3fc91a3afd70395cd496c647d5a6cc9d4b2b7fad" data-bs-toggle="tooltip" title="0x3fc91a3afd70395cd496c647d5a6cc9d4b2b7fad">0x3fC91A...4B2b7FAD</a><span class="d-inline d-sm-none badge border border-dark dark:border-white border-opacity-15 text-dark ms-1 py-1.5 px-2 fw-medium">0<b>.</b>01 Eth</span></div></div><div class="d-none d-sm-block text-end ms-2 ms-sm-0" data-bs-toggle="tooltip" title="Amount"><span class="badge border border-dark dark:border-white border-opacity-15 text-dark  py-1.5 px-2 fw-medium">0<b>.</b>01 Eth</span></div></div></div><hr><div class="row"><div class="col-sm-4 col-lg-5"><div class="d-flex align-items-center gap-2"><div class="d-none d-sm-flex content-center bg-light text-muted rounded p-3" style="height: 3rem; width: 3rem;"><i class="fal fa-memo fs-lg"></i></div><div class="d-flex align-items-center align-items-sm-start flex-row flex-sm-column gap-1 gap-sm-0"><span class="d-inline-block d-sm-none">TX#</span><a class="d-block text-truncate" style="max-width: 8rem;" href="/tx/0x7a13ef501bb03e61df477e39a3772d5cfb166f03bd471a604a65fb8ffd9ae5a2">0x7a13ef501bb03e61df477e39a3772d5cfb166f03bd471a604a65fb8ffd9ae5a2</a><div class="small text-muted">8 secs ago</div></div></div></div><div class="col-sm-8 col-lg-7 d-flex justify-content-sm-between align-items-end align-items-sm-center"><div class="pe-0 pe-sm-2"><div class="d-flex flex-wrap gap-1">From <a href="/address/0x27e0ec8b80b580d57392b5a6d07a7dfa06ad40cc" data-bs-toggle="tooltip" title="0x27e0ec8b80b580d57392b5a6d07a7dfa06ad40cc">0x27e0EC...06aD40cc</a></div><div class="d-flex align-items-center flex-wrap gap-1">To <a href="/address/0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce" data-bs-toggle="tooltip" title="0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce">0x95aD61...0B64C4cE</a><span class="d-inline d-sm-none badge border border-dark dark:border-white border-opacity-15 text-dark ms-1 py-1.5 px-2 fw-medium">0 Eth</span></div></div><div class="d-none d-sm-block text-end ms-2 ms-sm-0" data-bs-toggle="tooltip" title="Amount"><span class="badge border border-dark dark:border-white border-opacity-15 text-dark  py-1.5 px-2 fw-medium">0 Eth</span></div></div></div><hr><div class="row"><div class="col-sm-4 col-lg-5"><div class="d-flex align-items-center gap-2"><div class="d-none d-sm-flex content-center bg-light text-muted rounded p-3" style="height: 3rem; width: 3rem;"><i class="fal fa-memo fs-lg"></i></div><div class="d-flex align-items-center align-items-sm-start flex-row flex-sm-column gap-1 gap-sm-0"><span class="d-inline-block d-sm-none">TX#</span><a class="d-block text-truncate" style="max-width: 8rem;" href="/tx/0x6e99f93aee52a293306e8fdf621f0ebe0339b6db64d7390b11d2fad937edf2ad">0x6e99f93aee52a293306e8fdf621f0ebe0339b6db64d7390b11d2fad937edf2ad</a><div class="small text-muted">8 secs ago</div></div></div></div><div class="col-sm-8 col-lg-7 d-flex justify-content-sm-between align-items-end align-items-sm-center"><div class="pe-0 pe-sm-2"><div class="d-flex flex-wrap gap-1">From <a href="/address/0x0f78349d7c2ecb5269188e999ce495ba0a31f764" data-bs-toggle="tooltip" title="0x0f78349d7c2ecb5269188e999ce495ba0a31f764">0x0f7834...0A31F764</a></div><div class="d-flex align-items-center flex-wrap gap-1">To <a href="/address/0x3fc91a3afd70395cd496c647d5a6cc9d4b2b7fad" data-bs-toggle="tooltip" title="0x3fc91a3afd70395cd496c647d5a6cc9d4b2b7fad">0x3fC91A...4B2b7FAD</a><span class="d-inline d-sm-none badge border border-dark dark:border-white border-opacity-15 text-dark ms-1 py-1.5 px-2 fw-medium">0<b>.</b>006 Eth</span></div></div><div class="d-none d-sm-block text-end ms-2 ms-sm-0" data-bs-toggle="tooltip" title="Amount"><span class="badge border border-dark dark:border-white border-opacity-15 text-dark  py-1.5 px-2 fw-medium">0<b>.</b>006 Eth</span></div></div></div><hr><div class="row"><div class="col-sm-4 col-lg-5"><div class="d-flex align-items-center gap-2"><div class="d-none d-sm-flex content-center bg-light text-muted rounded p-3" style="height: 3rem; width: 3rem;"><i class="fal fa-memo fs-lg"></i></div><div class="d-flex align-items-center align-items-sm-start flex-row flex-sm-column gap-1 gap-sm-0"><span class="d-inline-block d-sm-none">TX#</span><a class="d-block text-truncate" style="max-width: 8rem;" href="/tx/0x7a0f644312508e3540856829e98d9ebccadebdf2ecfc88de8cf7d472ca2cfb65">0x7a0f644312508e3540856829e98d9ebccadebdf2ecfc88de8cf7d472ca2cfb65</a><div class="small text-muted">8 secs ago</div></div></div></div><div class="col-sm-8 col-lg-7 d-flex justify-content-sm-between align-items-end align-items-sm-center"><div class="pe-0 pe-sm-2"><div class="d-flex flex-wrap gap-1">From <a href="/address/0x9ef8265711535b64b7b08f19f159157c90e515d8" data-bs-toggle="tooltip" title="0x9ef8265711535b64b7b08f19f159157c90e515d8">0x9Ef826...90e515d8</a></div><div class="d-flex align-items-center flex-wrap gap-1">To <a href="/address/0x2e99230adb249cfaedcbcbc4cdc54539c4b68514" data-bs-toggle="tooltip" title="0x2e99230adb249cfaedcbcbc4cdc54539c4b68514">0x2E9923...c4B68514</a><span class="d-inline d-sm-none badge border border-dark dark:border-white border-opacity-15 text-dark ms-1 py-1.5 px-2 fw-medium">0<b>.</b>054 Eth</span></div></div><div class="d-none d-sm-block text-end ms-2 ms-sm-0" data-bs-toggle="tooltip" title="Amount"><span class="badge border border-dark dark:border-white border-opacity-15 text-dark  py-1.5 px-2 fw-medium">0<b>.</b>054 Eth</span></div></div></div>
+</div>
+<a class="card-footer bg-light fw-medium text-cap link-muted text-center" href="/txs">
+View all transactions <i class="far fa-long-arrow-right ms-1"></i>
+</a>
+</div>
+</div>
+
+</div>
+
+</section>
+</main>
+<div id="push" style="display: none;"></div>
+<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="emailSubscribeModalBox" aria-hidden="true">
+<div class="modal-dialog modal-sm" role="document">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close close-md" data-bs-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+<div class="text-center py-5-alt px-4">
+<div id="emailSubscribeModalBoxText"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="copyAddressConfirmModal" tabindex="-1" role="dialog">
+<div class="modal-dialog modal-md">
+<div class="modal-content">
+<div class="modal-header border-0">
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+
+<div class="text-center">
+<button type="button" id="btnConfirmCopyAddress" data-clipboard-target="#addressToCopy" class="btn btn-lg btn-secondary" data-bs-dismiss="modal">
+Understand, Copy Address
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+</div>
+<hr class="my-0">
+
+<div class="row justify-content-md-between py-8 py-lg-10">
+<div class="col-lg-4 pe-xl-16 mb-4 mb-lg-0">
+<div class="d-flex align-items-center mb-3">
+<img class="me-2" width="20" data-img-theme="light" src="https://cn.etherscan.com/images/svg/brands/ethereum-original.svg" alt="Ethereum Logo">
+<img class="me-2" width="20" data-img-theme="darkmode" src="https://cn.etherscan.com/images/svg/brands/ethereum-original-light.svg" alt="Ethereum Logo">
+<span class="fs-5">Powered by Ethereum</span>
+
+
+</div>
+
+</body>
+</html>
